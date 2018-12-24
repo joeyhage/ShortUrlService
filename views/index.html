@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>URL Shortener</title>
+      <link rel="shortcut icon" href="https://glitch.com/edit/favicon.ico?v=3" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <div class="container">
+        <h2>API Project: URL Shortener Microservice</h2>
+        
+        <h3>Short URL Creation </h3>
+        <form action="api/shorturl/new" method="POST">
+          <label for="url_input">URL to be shortened</label>
+          <input id="url_input" type="text" name="url">
+          <input type="submit" value="POST URL">
+        </form>
+        <h3>Example Usage:</h3>
+        <a href="https://fcc-shorturl-joeyhage.glitch.me/api/shorturl/1">
+          https://fcc-shorturl-joeyhage.glitch.me/api/shorturl/1
+        </a>
+        <h3>Will Redirect to:</h3>
+        <p>https://www.freecodecamp.org</p>
+      </div>
+      <div class="footer">
+        <p>by Joey Hage</p>
+      </div>
+   </body>
+</html>
